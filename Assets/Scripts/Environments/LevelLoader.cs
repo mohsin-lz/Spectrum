@@ -93,6 +93,7 @@ public class LevelLoader : MonoBehaviour
     public GameObject countDown2;
     public GameObject countDown1;
     public GameObject countDownGO;
+
     public GameObject fadeIn;
 
     public GameObject scoreGO;
@@ -102,6 +103,7 @@ public class LevelLoader : MonoBehaviour
     public AudioSource goFX;
 
     public TMP_Text disDisplay;
+    public TMP_Text finalDisplay;
     public int disRun;
     public bool addingDis = false;
     public float disDelay = 0.35f;
@@ -133,6 +135,7 @@ public class LevelLoader : MonoBehaviour
     {
         disRun += 1;
         disDisplay.text = disRun.ToString() + "m";
+        finalDisplay.text = disRun.ToString() + "m";
         yield return new WaitForSeconds(disDelay);
         addingDis = false;
     }
