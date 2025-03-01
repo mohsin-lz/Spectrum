@@ -9,6 +9,7 @@ public class RandomGateColor : MonoBehaviour
     public GameObject[] entries; // Array to store corresponding game objects for entries
     public List<Color> possibleColors; // List of possible colors
     public TMP_Text colorText; // TMP text to display one chosen color name
+    public Animator playerAnimator;
 
 
     private Dictionary<Color, string> colorNameMap = new Dictionary<Color, string>();

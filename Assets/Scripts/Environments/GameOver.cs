@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -25,5 +26,7 @@ public class GameOver : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         fadeOut.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(0);
     }
 }

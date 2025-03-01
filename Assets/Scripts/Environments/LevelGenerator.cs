@@ -30,7 +30,7 @@ public class LevelGenerator : MonoBehaviour
         sectionID = Random.Range(0, 3);
         Instantiate(section[sectionID], new Vector3(0, 0, zPos), Quaternion.identity);
         zPos += 55;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(6);
         isGenerating = false;
     }
 }
