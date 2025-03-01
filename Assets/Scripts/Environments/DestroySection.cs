@@ -23,21 +23,24 @@ public class DestroySection : MonoBehaviour
 
     IEnumerator destroyClone()
     {
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(40);
 
         if(parentName == "Section1(Clone)")
         {
             Destroy(gameObject);
+            yield return new WaitForSeconds(15);
         }
 
         if (parentName == "Section2(Clone)")
         {
             Destroy(gameObject);
+            yield return new WaitForSeconds(15);
         }
 
         if (parentName == "Section3(Clone)")
         {
             Destroy(gameObject);
+            yield return new WaitForSeconds(15);
         }
     }
 }
