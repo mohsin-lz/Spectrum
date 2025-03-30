@@ -105,7 +105,7 @@ public class RandomGateColor : MonoBehaviour
             }
         }
 
-        // Debugging
+        // Debugging ( Testing Phase #007)
         Debug.Log("Passable Gate: " + (passableGateRenderer != null ? passableGateRenderer.gameObject.name : "None"));
 
         // Now we need to enable isTrigger on the corresponding entries' MeshColliders
